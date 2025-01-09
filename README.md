@@ -1,0 +1,3 @@
+# React Router v6: useNavigate Hook Error
+
+This repository demonstrates a common error encountered when using the `useNavigate` hook in React Router v6 and provides a solution. The error typically arises when `useNavigate` is called before the component's mount lifecycle completes, resulting in context unavailability.  The solution involves conditionally using `useNavigate` after the component has fully mounted, commonly employing the `useEffect` hook.
